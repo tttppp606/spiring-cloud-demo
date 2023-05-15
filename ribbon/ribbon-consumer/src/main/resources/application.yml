@@ -1,0 +1,11 @@
+Spring:
+  Application:
+    name: ribbon-consumer
+server:
+  port: 31001
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:20001/eureka/,http://peer2:20002/eureka/

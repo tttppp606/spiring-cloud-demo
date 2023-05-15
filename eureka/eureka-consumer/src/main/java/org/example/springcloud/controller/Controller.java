@@ -26,6 +26,7 @@ public class Controller {
     @GetMapping("/hello")
     public String hello(){
 
+        //从注册中心获取到目标服务节点信息
         ServiceInstance instance = client.choose("eureka-client");
 
         if (instance == null){
