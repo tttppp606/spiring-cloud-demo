@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/eureka/eureka-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/ribbon-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/ribbon-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign/feign-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign/feign-consumer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon/ribbon-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon/ribbon-consumer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

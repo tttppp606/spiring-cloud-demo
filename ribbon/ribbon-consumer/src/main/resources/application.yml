@@ -9,3 +9,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://peer1:20001/eureka/,http://peer2:20002/eureka/
+
+# 改变ribbon的负载均衡策略
+eureka-client:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule

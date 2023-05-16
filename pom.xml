@@ -15,6 +15,7 @@
         <module>eureka/eureka-peer1</module>
         <module>eureka/eureka-peer2</module>
         <module>ribbon/ribbon-consumer</module>
+        <module>feign/feign-consumer</module>
     </modules>
 
     <properties>
