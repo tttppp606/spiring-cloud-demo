@@ -1,0 +1,3 @@
+feigin-consumer为消费者
+
+将目标服务节点eureka-client的配置信息写在Iservice内，进行调用
