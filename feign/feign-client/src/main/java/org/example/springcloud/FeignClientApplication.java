@@ -8,11 +8,11 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients/* 为了调用feign接库，注入feign相关组件*/
-public class FeignConsumerApplication {
+public class FeignClientApplication {
+
     public static void main(String[] args) {
-        new SpringApplicationBuilder(FeignConsumerApplication.class)
-                .web(WebApplicationType.SERVLET)
-                .run(args);
+        new SpringApplicationBuilder(FeignClientApplication.class).
+                web(WebApplicationType.SERVLET).
+                run(args);
     }
 }

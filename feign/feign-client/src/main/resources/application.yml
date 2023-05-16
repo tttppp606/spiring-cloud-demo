@@ -1,0 +1,11 @@
+Spring:
+  application:
+    name: feign-client
+
+Server:
+  port: 40002
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:20001/eureka/,http://peer2:20002/eureka/

@@ -1,0 +1,2 @@
+feign-client将controller里的路径和方法（get、post等）抽象到其他模块feign-client-intf，
+并且继承公共模块的IService接口，可以使得服务调用方页也从IService获取目标服务器信息，避免重复代码
