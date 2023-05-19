@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/eureka/eureka-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/eureka-client/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/eureka-consumer/src/main/java" charset="UTF-8" />
@@ -11,8 +11,6 @@
     <file url="file://$PROJECT_DIR$/eureka/eureka-peer2/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/eureka-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/eureka-server/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/eureka/ribbon-consumer/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/eureka/ribbon-consumer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feign/feign-client-intf/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feign/feign-client-intf/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feign/feign-client/src/main/java" charset="UTF-8" />
@@ -23,7 +21,5 @@
     <file url="file://$PROJECT_DIR$/feign/feign-consumer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon/ribbon-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon/ribbon-consumer/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>
