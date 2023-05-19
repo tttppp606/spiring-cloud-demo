@@ -9,12 +9,10 @@ eureka:
     serviceUrl:
       defaultZone: http://peer1:20001/eureka/,http://peer2:20002/eureka/
 
-feign:
-  service:
-    provider:
-      ribbon:
-        OkToRetryOnAllOperations: true
-        ConnectTimeout: 1000
-        ReadTimeout: 2000
-        MaxAutoRetries: 2
-        MaxAutoRetriesNextServer: 2
+feign-client:
+  ribbon:
+    OkToRetryOnAllOperations: true
+    ConnectTimeout: 1000
+    ReadTimeout: 2000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 2
