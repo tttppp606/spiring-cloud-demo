@@ -3,9 +3,17 @@ Spring:
     name: feign-consumer-advanced
 
 server:
-  port: 40003
+  port: 50000
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://peer1:20001/eureka/,http://peer2:20002/eureka/
+
+feign-client:
+  ribbon:
+    OkToRetryOnAllOperations: true
+    ConnectTimeout: 1000
+    ReadTimeout: 2000
+    MaxAutoRetries: 2
+    MaxAutoRetriesNextServer: 2

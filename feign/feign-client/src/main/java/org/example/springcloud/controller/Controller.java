@@ -32,4 +32,17 @@ public class Controller implements IService {
         friend.setPort(port);
         return friend;
     }
+
+    @Override
+    public String retry(int timeout) {
+        while (timeout-- >= 0) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        log.info("retry" + port);
+        return port;
+    }
 }

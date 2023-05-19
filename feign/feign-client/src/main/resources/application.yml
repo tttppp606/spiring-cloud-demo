@@ -3,7 +3,7 @@ Spring:
     name: feign-client
 
 Server:
-  port: 40002
+  port: 40005
 
 eureka:
   client:
