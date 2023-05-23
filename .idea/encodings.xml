@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/config/config-client-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/config-client-eureka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/config-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/config-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/config-server-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/config-server-eureka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/config-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/eureka-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/eureka-client/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/eureka-consumer/src/main/java" charset="UTF-8" />
@@ -19,7 +27,15 @@
     <file url="file://$PROJECT_DIR$/feign/feign-consumer-advanced/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feign/feign-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feign/feign-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix/hystrix-dashboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix/hystrix-dashboard/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix/hystrix-fallback/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix/hystrix-fallback/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix/hystrix-turbine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix/hystrix-turbine/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon/ribbon-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon/ribbon-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>

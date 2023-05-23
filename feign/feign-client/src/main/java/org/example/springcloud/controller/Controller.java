@@ -3,9 +3,7 @@ package org.example.springcloud.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.example.springcloud.entity.Friend;
 import org.example.springcloud.service.IService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -37,12 +35,16 @@ public class Controller implements IService {
     public String retry(int timeout) {
         while (timeout-- >= 0) {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(10);
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
             }
         }
         log.info("retry" + port);
         return port;
+    }
+
+    @Override
+    public String error() {
+        throw new RuntimeException("black sheep");
     }
 }

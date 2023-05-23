@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-server-eureka
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tttppp606/config-repo.git
+          force-pull: true   #强制拉取
+#          username:
+#          password:
+#          search-paths:
+
+server:
+  port: 60003
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:20001/eureka/,http://peer2:20002/eureka/

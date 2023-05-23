@@ -11,8 +11,13 @@ eureka:
 
 feign-client:
   ribbon:
+    # 所有的HTTP的method都进行重试
     OkToRetryOnAllOperations: true
+    # 建立连接超时时间
     ConnectTimeout: 1000
+    # 响应超时时间
     ReadTimeout: 2000
+    # 每台机器最大重试次数
     MaxAutoRetries: 2
+    # 可以重试几台机器
     MaxAutoRetriesNextServer: 2

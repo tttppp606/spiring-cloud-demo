@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://localhost:60000 # config服务端
+      profile: prod      #git里的配置文件为config-consumer-prod.yml
+      label: main        # git的分支名字，一般为master
+      name: config-consumer   #默认会用application的名字作为git上配置文件的名字进行拉取，这里指定了git上实际的文件名字
+
+server:
+  port: 61000
+
+# 从配置中心拉取words赋给myWords，再将myWords赋给代码里的@Value
+myWords: ${words}
+
+###################
+#
+#   actuator配置
+#
+####################
+management:
+  security:
+    enabled: false # 关闭安全配置，用于显示所有信息
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # /actuator下所有信息都可以显示
+  endpoint:
+    health:
+      show-details: always
+
