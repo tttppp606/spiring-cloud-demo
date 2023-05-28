@@ -12,7 +12,7 @@ spring:
 #          search-paths:
 
 server:
-  port: 60003
+  port: 60001
 
 eureka:
   client:

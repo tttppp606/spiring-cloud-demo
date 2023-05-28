@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: config-bus-server
+  rabbitmq:
+#    host: 43.154.106.172
+#    port: 5672
+    addresses: 43.154.106.172:5672, 43.154.166.55:5672, 43.154.33.30:5672
+    username: admin
+    password: admin
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://kgithub.com/tttppp606/config-repo.git
+          force-pull: true   #强制拉取
+#          username:
+#          password:
+#          search-paths:
+
+server:
+  port: 60002
+
+###################
+#
+#   eureka注册中心
+#
+####################
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:20001/eureka/,http://peer2:20002/eureka/
+
+
+###################
+#
+#   actuator配置
+#
+####################
+management:
+  security:
+    enabled: false # 关闭安全配置，用于显示所有信息
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # /actuator下所有信息都可以显示
+  endpoint:
+    health:
+      show-details: always

@@ -2,7 +2,7 @@ package org.example.springcloud.hystrix;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import lombok.extern.slf4j.Slf4j;
-import org.example.springcloud.MyService;
+import org.example.springcloud.service.MyService;
 import org.example.springcloud.entity.Friend;
 import org.springframework.stereotype.Component;
 

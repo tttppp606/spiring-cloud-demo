@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: config-bus-client
+  rabbitmq:
+#    host: 43.154.106.172
+#    port: 5672
+    addresses: 43.154.166.55:5672, 43.154.106.172:5672, 43.154.33.30:5672
+    username: admin
+    password: admin
+  cloud:
+    config:
+      #uri: http://localhost:60000 # config服务端，改为eyreka高可用配置中心后弃用
+      profile: prod      #git里的配置文件为config-consumer-prod.yml
+      label: main        # git的分支名字，一般为master
+      name: config-consumer   #默认会用application的名字作为git上配置文件的名字进行拉取，这里指定了git上实际的文件名字
+      discovery:    # 配置中心基于eureka的高可用改造
+        enabled: true     # 开启eureka拉取服务列表
+        service-id: config-bus-server  # 要拉取的配置中心config服务端的appName
+    stream:
+      default-binder: rabbit   # 当项目引入类kafka和rabbitmq，需要指定一个默认的，否则启动报错
+
+
+server:
+  port: 61002
+
+# 从配置中心拉取words赋给myWords，再将myWords赋给代码里的@Value
+myWords: ${words}
+
+# 配置中心基于eureka的高可用改造
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:20001/eureka/,http://peer2:20002/eureka/
+
+###################
+#
+#   actuator配置
+#
+####################
+management:
+  security:
+    enabled: false # 关闭安全配置，用于显示所有信息
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # /actuator下所有信息都可以显示
+  endpoint:
+    health:
+      show-details: always
+

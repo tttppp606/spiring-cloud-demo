@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: feignclient  # 自定义的名字
+        uri: lb://FEIGN-CLIENT  # lb为负载均衡
+        predicates:   # 匹配断言，请求路径为yml才能匹配，才能调用注册中心里的FEIGN-CLIENT
+        - Path=/yml/**
+        filters:      # 过滤器，像加工器
+        - StripPrefix=1  # localhost:1008/yml/sayHi中的第一个前缀yml删掉，localhost:1008被替换为FEIGN-CLIENT

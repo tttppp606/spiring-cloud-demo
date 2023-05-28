@@ -1,4 +1,4 @@
-package org.example.springcloud;
+package org.example.springcloud.service;
 
 import org.example.springcloud.hystrix.FallBack;
 import org.example.springcloud.service.IService;

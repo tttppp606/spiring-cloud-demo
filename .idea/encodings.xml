@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/bus/config-bus-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bus/config-bus-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bus/config-bus-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bus/config-bus-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/config-client-eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/config-client-eureka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/config-client/src/main/java" charset="UTF-8" />
@@ -27,6 +31,14 @@
     <file url="file://$PROJECT_DIR$/feign/feign-consumer-advanced/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feign/feign-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feign/feign-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-sample/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-sample/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/auth-service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/auth-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/gateway-sample/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/gateway-sample/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/gateway-server-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix/hystrix-dashboard/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix/hystrix-dashboard/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix/hystrix-fallback/src/main/java" charset="UTF-8" />

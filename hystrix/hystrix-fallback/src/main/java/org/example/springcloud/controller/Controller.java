@@ -1,12 +1,11 @@
 package org.example.springcloud.controller;
 
-import com.netflix.hystrix.HystrixRequestCache;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
 import lombok.Cleanup;
-import org.example.springcloud.MyService;
-import org.example.springcloud.RequestCacheService;
+import org.example.springcloud.service.MyService;
+import org.example.springcloud.service.RequestCacheService;
 import org.example.springcloud.entity.Friend;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

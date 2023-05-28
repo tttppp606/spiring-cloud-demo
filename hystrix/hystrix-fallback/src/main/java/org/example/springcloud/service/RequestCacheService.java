@@ -1,15 +1,17 @@
-package org.example.springcloud;
+package org.example.springcloud.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheKey;
 import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheResult;
 import lombok.extern.slf4j.Slf4j;
 import org.example.springcloud.entity.Friend;
-import org.example.springcloud.service.IService;
+import org.example.springcloud.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
+/**
+ * 测试缓存requestCache
+ */
 @Slf4j
 @Service
 public class RequestCacheService {

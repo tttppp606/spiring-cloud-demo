@@ -10,7 +10,6 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 
 @EnableDiscoveryClient
-@EnableHystrix
 @EnableTurbine
 @EnableAutoConfiguration
 public class TurbineApplication {
